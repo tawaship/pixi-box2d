@@ -20,6 +20,7 @@
 					
 					this.addChild(new PIXI.Graphics()).beginFill(0x00FF00).drawRect(0, 0, 450, 800 / 2)
 					this.interactive = true;
+					this.cursor = 'pointer'
 					
 					const world = this.addChild(new PIXI.box2d.WorldContainer({
 						listenPreSolve: false,
@@ -39,33 +40,28 @@
 					
 					//a.children[0].position.set(0,0)
 					//console.log(Box2D)
-					let io = 0
 					this.on("pointerdown", (e) => {
+						const r = Math.random() > 0.5;
+						const w = 100
+						const h = 150
+						
+						const a2 = world.addBox2d(new PIXI.box2d.Rectangle(w, h, {
+							density: 0.1,
+							restitution: 0.1,
+							friction: 0.9,
+							categoryBits: 1
+						}));
+						
+						a2.addChild(new PIXI.Graphics().beginFill(0xFF0000).drawRect(0, 0, w, h));
+						if (!r) {
+							a2.setX(e.data.global.x - a2.width / 2);
+							a2.setY(e.data.global.y - a2.height / 2);
+						} else {
+							a2.setRotation(90 * Math.PI / 180);
+							a2.setX(e.data.global.x + a2.height / 2);
+							a2.setY(e.data.global.y - a2.width / 2);
+						}
 					
-					const r = Math.random() > 0.5;
-					const w = 100
-					const h = 150
-					
-					const a2 = world.addBox2d(new PIXI.box2d.Rectangle(w, h, {
-						density: 0.1,
-						restitution: 0.1,
-						friction: 0.9
-					}));
-					
-					a2.addChild(new PIXI.Graphics().beginFill(0xFF0000).drawRect(0, 0, w, h));
-					
-					if (!r) {
-						a2.setX(e.data.global.x - a2.width / 2);
-						a2.setY(e.data.global.y - a2.height / 2);
-					} else {
-						a2.setRotation(90 * Math.PI / 180);
-						a2.setX(e.data.global.x + a2.height / 2);
-						a2.setY(e.data.global.y - a2.width / 2);
-					}
-					
-					//r && (a2.rotation = 90 * Math.PI / 180);
-					//a2.x = e.data.global.x;
-					//a2.y = e.data.global.y;
 					})
 					
 					const baseHeight = 100;
@@ -73,9 +69,6 @@
 					base.setX(450 / 2 - base.width / 2);
 					base.setY(800 - baseHeight - 100);
 					
-					//const v = new PIXI.box2d.Collision.Shapes.b2EdgeShape({x:0,y:0},{x:30,y:40})
-					//console.log(v.GetCoreVertex2())
-					//return
 					const dead = world.addBox2d(new PIXI.box2d.Edge(new PIXI.box2d.Common.Math.b2Vec2(450 + 2000, 0), { isStatic: true, isSensor: true, maskBits: 1 }));
 					dead.setX(-1000);
 					dead.setY(800 - 10);
