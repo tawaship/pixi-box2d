@@ -4,12 +4,12 @@ src/
 test/
 lib/
 npm/
+samples/
 .travis.yml
 .gitignore
 .eslintrc.json
 jsdoc.json
 tsconfig.json
 rollup.config.js
-samples/
 index.html
 style.css
