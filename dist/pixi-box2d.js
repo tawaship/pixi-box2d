@@ -123,24 +123,25 @@ this.PIXI = this.PIXI || {}, function(exports, pixi_js, box2dwebModule) {
         return isDynamic ? bodyDef.type = Body.b2_dynamicBody : Body.b2_staticBody, bodyDef;
     }
     var dynamicBodyDef = createBodyDef(!0), staticBodyDef = createBodyDef(!1);
-    function createFixtureDef(options, pixi) {
-        void 0 === options && (options = {});
-        var fixtureDef = new FixtureDef;
-        return fixtureDef.density = "number" == typeof options.density ? options.density : fixtureDef.density, 
-        fixtureDef.friction = "number" == typeof options.friction ? options.friction : fixtureDef.friction, 
-        fixtureDef.restitution = "number" == typeof options.restitution ? options.restitution : fixtureDef.restitution, 
-        fixtureDef.filter.categoryBits = "number" == typeof options.categoryBits ? options.categoryBits : fixtureDef.filter.categoryBits, 
-        fixtureDef.filter.maskBits = "number" == typeof options.maskBits ? options.maskBits : fixtureDef.filter.maskBits, 
-        fixtureDef.isSensor = !!options.isSensor, fixtureDef.userData = pixi, fixtureDef;
-    }
     var Box2dObject = function(Container) {
         function Box2dObject(options) {
-            void 0 === options && (options = {}), Container.call(this), this._box2dData = {
+            void 0 === options && (options = {}), Container.call(this);
+            var fixtureDef = function(options, pixi) {
+                void 0 === options && (options = {});
+                var fixtureDef = new FixtureDef;
+                return fixtureDef.density = "number" == typeof options.density ? options.density : fixtureDef.density, 
+                fixtureDef.friction = "number" == typeof options.friction ? options.friction : fixtureDef.friction, 
+                fixtureDef.restitution = "number" == typeof options.restitution ? options.restitution : fixtureDef.restitution, 
+                fixtureDef.filter.categoryBits = "number" == typeof options.categoryBits ? options.categoryBits : fixtureDef.filter.categoryBits, 
+                fixtureDef.filter.maskBits = "number" == typeof options.maskBits ? options.maskBits : fixtureDef.filter.maskBits, 
+                fixtureDef.isSensor = !!options.isSensor, fixtureDef.userData = pixi, fixtureDef;
+            }(options, this);
+            this._box2dData = {
                 id: Box2dObject._id++,
                 body: null,
                 bodyDef: options.isStatic ? staticBodyDef : dynamicBodyDef,
-                fixtureDefs: [ createFixtureDef(options, this) ],
-                maskBits: 65535
+                fixtureDefs: [ fixtureDef ],
+                maskBits: fixtureDef.filter.maskBits
             };
         }
         Container && (Box2dObject.__proto__ = Container), Box2dObject.prototype = Object.create(Container && Container.prototype), 

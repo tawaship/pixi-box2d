@@ -279,12 +279,13 @@ function createFixtureDef(options = {}, pixi) {
 class Box2dObject extends pixi_js.Container {
     constructor(options = {}) {
         super();
+        const fixtureDef = createFixtureDef(options, this);
         this._box2dData = {
             id: Box2dObject._id++,
             body: null,
             bodyDef: options.isStatic ? staticBodyDef : dynamicBodyDef,
-            fixtureDefs: [createFixtureDef(options, this)],
-            maskBits: 65535
+            fixtureDefs: [fixtureDef],
+            maskBits: fixtureDef.filter.maskBits
         };
     }
     /**
