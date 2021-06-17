@@ -48,7 +48,7 @@ git clone https://github.com/tawaship/pixi-box2d
 For browsers, this module is stored in the namespace "PIXI.box2d".
 
 ```javascript
-const app = new PIXI.Application(({
+const app = new PIXI.Application({
 	width: 450,
 	height: 800
 });
