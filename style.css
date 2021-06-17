@@ -1,0 +1,41 @@
+body {
+	margin: 0;
+}
+
+li {
+	font-size: 4vw;
+	margin: 0 2vw 2vw 0;
+	border-radius: 1vw;
+	box-shadow: 0.5vw 1vw 1vw 0 rgba(0, 0, 0, 0.5);
+	font-weight: bold;
+}
+
+li.l {
+	background: #009;
+	padding-left: 3vw;
+	color: #FFF;
+}
+
+a {
+	text-decoration: none;
+	color: #33F;
+	background: #000;
+	display: flex;
+	background: #CCF;
+	border-radius: 1vw;
+	padding-left: 3vw;
+}
+
+a:hover {
+	background: #33F;
+	color: #FFF;
+}
+
+ul {
+	list-style: none;
+	padding-inline-start: 2vw;
+}
+
+ul > ul {
+	padding-inline-start: 5vw;
+}

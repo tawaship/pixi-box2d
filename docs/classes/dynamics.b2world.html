@@ -1,0 +1,1647 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>b2World | @tawaship/pixi-box2d-test - v1.0.0</title>
+	<meta name="description" content="Documentation for @tawaship/pixi-box2d-test - v1.0.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@tawaship/pixi-box2d-test - v1.0.0</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">@tawaship/pixi-box2d-test - v1.0.0</a>
+				</li>
+				<li>
+					<a href="../modules/dynamics.html">Dynamics</a>
+				</li>
+				<li>
+					<a href="dynamics.b2world.html">b2World</a>
+				</li>
+			</ul>
+			<h1>Class b2World</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The world class manages all physics entities, dynamic simulation, and asynchronous queries.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">b2World</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="dynamics.b2world.html#e_locked" class="tsd-kind-icon">e_<wbr>locked</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="dynamics.b2world.html#e_newfixture" class="tsd-kind-icon">e_<wbr>new<wbr>Fixture</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#addcontroller" class="tsd-kind-icon">Add<wbr>Controller</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#clearforces" class="tsd-kind-icon">Clear<wbr>Forces</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#createbody" class="tsd-kind-icon">Create<wbr>Body</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#createcontroller" class="tsd-kind-icon">Create<wbr>Controller</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#createjoint" class="tsd-kind-icon">Create<wbr>Joint</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#destroybody" class="tsd-kind-icon">Destroy<wbr>Body</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#destroycontroller" class="tsd-kind-icon">Destroy<wbr>Controller</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#destroyjoint" class="tsd-kind-icon">Destroy<wbr>Joint</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#drawdebugdata" class="tsd-kind-icon">Draw<wbr>Debug<wbr>Data</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#getbodycount" class="tsd-kind-icon">Get<wbr>Body<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#getbodylist" class="tsd-kind-icon">Get<wbr>Body<wbr>List</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#getcontactcount" class="tsd-kind-icon">Get<wbr>Contact<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#getcontactlist" class="tsd-kind-icon">Get<wbr>Contact<wbr>List</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#getgravity" class="tsd-kind-icon">Get<wbr>Gravity</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#getgroundbody" class="tsd-kind-icon">Get<wbr>Ground<wbr>Body</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#getjointcount" class="tsd-kind-icon">Get<wbr>Joint<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#getjointlist" class="tsd-kind-icon">Get<wbr>Joint<wbr>List</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#getproxycount" class="tsd-kind-icon">Get<wbr>Proxy<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#islocked" class="tsd-kind-icon">Is<wbr>Locked</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#queryaabb" class="tsd-kind-icon">QueryAABB</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#querypoint" class="tsd-kind-icon">Query<wbr>Point</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#queryshape" class="tsd-kind-icon">Query<wbr>Shape</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#raycast" class="tsd-kind-icon">Ray<wbr>Cast</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#raycastall" class="tsd-kind-icon">Ray<wbr>Cast<wbr>All</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#raycastone" class="tsd-kind-icon">Ray<wbr>Cast<wbr>One</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#removecontroller" class="tsd-kind-icon">Remove<wbr>Controller</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#setbroadphase" class="tsd-kind-icon">Set<wbr>Broad<wbr>Phase</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#setcontactfilter" class="tsd-kind-icon">Set<wbr>Contact<wbr>Filter</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#setcontactlistener" class="tsd-kind-icon">Set<wbr>Contact<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#setcontinuousphysics" class="tsd-kind-icon">Set<wbr>Continuous<wbr>Physics</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#setdebugdraw" class="tsd-kind-icon">Set<wbr>Debug<wbr>Draw</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#setdestructionlistener" class="tsd-kind-icon">Set<wbr>Destruction<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#setgravity" class="tsd-kind-icon">Set<wbr>Gravity</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#setwarmstarting" class="tsd-kind-icon">Set<wbr>Warm<wbr>Starting</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#step" class="tsd-kind-icon">Step</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="dynamics.b2world.html#validate" class="tsd-kind-icon">Validate</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">new b2<wbr>World<span class="tsd-signature-symbol">(</span>gravity<span class="tsd-signature-symbol">: </span><a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a>, doSleep<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="dynamics.b2world.html" class="tsd-signature-type" data-tsd-kind="Class">b2World</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3405</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new world.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>gravity: <a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The world gravity vector.</p>
+									</div>
+								</li>
+								<li>
+									<h5>doSleep: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Improvie performance by not simulating inactive bodies.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="dynamics.b2world.html" class="tsd-signature-type" data-tsd-kind="Class">b2World</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="e_locked" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> e_<wbr>locked</h3>
+					<div class="tsd-signature tsd-kind-icon">e_<wbr>locked<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3400</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Locked</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="e_newfixture" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> e_<wbr>new<wbr>Fixture</h3>
+					<div class="tsd-signature tsd-kind-icon">e_<wbr>new<wbr>Fixture<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3405</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>New Fixture</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="addcontroller" class="tsd-anchor"></a>
+					<h3>Add<wbr>Controller</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Add<wbr>Controller<span class="tsd-signature-symbol">(</span>c<span class="tsd-signature-symbol">: </span><a href="dynamics.controllers.b2controller.html" class="tsd-signature-type" data-tsd-kind="Class">b2Controller</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="dynamics.controllers.b2controller.html" class="tsd-signature-type" data-tsd-kind="Class">b2Controller</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3419</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add a controller to the world list.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>c: <a href="dynamics.controllers.b2controller.html" class="tsd-signature-type" data-tsd-kind="Class">b2Controller</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Controller to add.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="dynamics.controllers.b2controller.html" class="tsd-signature-type" data-tsd-kind="Class">b2Controller</a></h4>
+							<p>Controller that was added to the world.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="clearforces" class="tsd-anchor"></a>
+					<h3>Clear<wbr>Forces</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Clear<wbr>Forces<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3424</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Call this after you are done with time steps to clear the forces. You normally call this after each call to Step, unless you are performing sub-steps.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="createbody" class="tsd-anchor"></a>
+					<h3>Create<wbr>Body</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Create<wbr>Body<span class="tsd-signature-symbol">(</span>def<span class="tsd-signature-symbol">: </span><a href="dynamics.b2bodydef.html" class="tsd-signature-type" data-tsd-kind="Class">b2BodyDef</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="dynamics.b2body.html" class="tsd-signature-type" data-tsd-kind="Class">b2Body</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3431</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a rigid body given a definition. No reference to the definition is retained.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>def: <a href="dynamics.b2bodydef.html" class="tsd-signature-type" data-tsd-kind="Class">b2BodyDef</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Body&#39;s definition.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="dynamics.b2body.html" class="tsd-signature-type" data-tsd-kind="Class">b2Body</a></h4>
+							<p>Created rigid body.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="createcontroller" class="tsd-anchor"></a>
+					<h3>Create<wbr>Controller</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Create<wbr>Controller<span class="tsd-signature-symbol">(</span>controller<span class="tsd-signature-symbol">: </span><a href="dynamics.controllers.b2controller.html" class="tsd-signature-type" data-tsd-kind="Class">b2Controller</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="dynamics.controllers.b2controller.html" class="tsd-signature-type" data-tsd-kind="Class">b2Controller</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3438</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new controller.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>controller: <a href="dynamics.controllers.b2controller.html" class="tsd-signature-type" data-tsd-kind="Class">b2Controller</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>New controller.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="dynamics.controllers.b2controller.html" class="tsd-signature-type" data-tsd-kind="Class">b2Controller</a></h4>
+							<p>New controller.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="createjoint" class="tsd-anchor"></a>
+					<h3>Create<wbr>Joint</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Create<wbr>Joint<span class="tsd-signature-symbol">(</span>def<span class="tsd-signature-symbol">: </span><a href="dynamics.joints.b2jointdef.html" class="tsd-signature-type" data-tsd-kind="Class">b2JointDef</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="dynamics.joints.b2joint.html" class="tsd-signature-type" data-tsd-kind="Class">b2Joint</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3446</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a joint to constrain bodies together. No reference to the definition is retained. This may cause the connected bodies to cease colliding.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>warning</dt>
+									<dd><p>This function is locked during callbacks.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>def: <a href="dynamics.joints.b2jointdef.html" class="tsd-signature-type" data-tsd-kind="Class">b2JointDef</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Joint definition.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="dynamics.joints.b2joint.html" class="tsd-signature-type" data-tsd-kind="Class">b2Joint</a></h4>
+							<p>New created joint.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="destroybody" class="tsd-anchor"></a>
+					<h3>Destroy<wbr>Body</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Destroy<wbr>Body<span class="tsd-signature-symbol">(</span>b<span class="tsd-signature-symbol">: </span><a href="dynamics.b2body.html" class="tsd-signature-type" data-tsd-kind="Class">b2Body</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3453</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Destroy a rigid body given a definition. No reference to the definition is retained. This function is locked during callbacks.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>warning</dt>
+									<dd><p>This function is locked during callbacks.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>b: <a href="dynamics.b2body.html" class="tsd-signature-type" data-tsd-kind="Class">b2Body</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Body to destroy.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="destroycontroller" class="tsd-anchor"></a>
+					<h3>Destroy<wbr>Controller</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Destroy<wbr>Controller<span class="tsd-signature-symbol">(</span>controller<span class="tsd-signature-symbol">: </span><a href="dynamics.controllers.b2controller.html" class="tsd-signature-type" data-tsd-kind="Class">b2Controller</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3460</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Destroy a controller given the controller instance.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>warning</dt>
+									<dd><p>This function is locked during callbacks.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>controller: <a href="dynamics.controllers.b2controller.html" class="tsd-signature-type" data-tsd-kind="Class">b2Controller</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Controller to destroy.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="destroyjoint" class="tsd-anchor"></a>
+					<h3>Destroy<wbr>Joint</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Destroy<wbr>Joint<span class="tsd-signature-symbol">(</span>j<span class="tsd-signature-symbol">: </span><a href="dynamics.joints.b2joint.html" class="tsd-signature-type" data-tsd-kind="Class">b2Joint</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3466</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Destroy a joint. This may cause the connected bodies to begin colliding.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>j: <a href="dynamics.joints.b2joint.html" class="tsd-signature-type" data-tsd-kind="Class">b2Joint</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Joint to destroy.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="drawdebugdata" class="tsd-anchor"></a>
+					<h3>Draw<wbr>Debug<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Draw<wbr>Debug<wbr>Data<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3471</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Call this to draw shapes and other debug draw data.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getbodycount" class="tsd-anchor"></a>
+					<h3>Get<wbr>Body<wbr>Count</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Get<wbr>Body<wbr>Count<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3477</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the number of bodies.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>Number of bodies in this world.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getbodylist" class="tsd-anchor"></a>
+					<h3>Get<wbr>Body<wbr>List</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Get<wbr>Body<wbr>List<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="dynamics.b2body.html" class="tsd-signature-type" data-tsd-kind="Class">b2Body</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3483</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the world body list. With the returned body, use b2Body::GetNext to get the next body in the world list. A NULL body indicates the end of the list.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="dynamics.b2body.html" class="tsd-signature-type" data-tsd-kind="Class">b2Body</a></h4>
+							<p>The head of the world body list.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getcontactcount" class="tsd-anchor"></a>
+					<h3>Get<wbr>Contact<wbr>Count</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Get<wbr>Contact<wbr>Count<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3489</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the number of contacts (each may have 0 or more contact points).</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>Number of contacts.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getcontactlist" class="tsd-anchor"></a>
+					<h3>Get<wbr>Contact<wbr>List</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Get<wbr>Contact<wbr>List<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="dynamics.contacts.b2contact.html" class="tsd-signature-type" data-tsd-kind="Class">b2Contact</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3495</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the world contact list. With the returned contact, use b2Contact::GetNext to get the next contact in the world list. A NULL contact indicates the end of the list.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="dynamics.contacts.b2contact.html" class="tsd-signature-type" data-tsd-kind="Class">b2Contact</a></h4>
+							<p>The head of the world contact list.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getgravity" class="tsd-anchor"></a>
+					<h3>Get<wbr>Gravity</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Get<wbr>Gravity<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3501</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the global gravity vector.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a></h4>
+							<p>Global gravity vector.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getgroundbody" class="tsd-anchor"></a>
+					<h3>Get<wbr>Ground<wbr>Body</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Get<wbr>Ground<wbr>Body<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="dynamics.b2body.html" class="tsd-signature-type" data-tsd-kind="Class">b2Body</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3507</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The world provides a single static ground body with no collision shapes. You can use this to simplify the creation of joints and static shapes.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="dynamics.b2body.html" class="tsd-signature-type" data-tsd-kind="Class">b2Body</a></h4>
+							<p>The ground body.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getjointcount" class="tsd-anchor"></a>
+					<h3>Get<wbr>Joint<wbr>Count</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Get<wbr>Joint<wbr>Count<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3513</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the number of joints.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The number of joints in the world.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getjointlist" class="tsd-anchor"></a>
+					<h3>Get<wbr>Joint<wbr>List</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Get<wbr>Joint<wbr>List<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="dynamics.joints.b2joint.html" class="tsd-signature-type" data-tsd-kind="Class">b2Joint</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3519</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the world joint list. With the returned joint, use b2Joint::GetNext to get the next joint in the world list. A NULL joint indicates the end of the list.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="dynamics.joints.b2joint.html" class="tsd-signature-type" data-tsd-kind="Class">b2Joint</a></h4>
+							<p>The head of the world joint list.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getproxycount" class="tsd-anchor"></a>
+					<h3>Get<wbr>Proxy<wbr>Count</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Get<wbr>Proxy<wbr>Count<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3525</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the number of broad-phase proxies.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>Number of borad-phase proxies.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="islocked" class="tsd-anchor"></a>
+					<h3>Is<wbr>Locked</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Is<wbr>Locked<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3531</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Is the world locked (in the middle of a time step).</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>True if the world is locked and in the middle of a time step, otherwise false.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="queryaabb" class="tsd-anchor"></a>
+					<h3>QueryAABB</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">QueryAABB<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>fixutre<span class="tsd-signature-symbol">: </span><a href="dynamics.b2fixture.html" class="tsd-signature-type" data-tsd-kind="Class">b2Fixture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span>, aabb<span class="tsd-signature-symbol">: </span><a href="collision.b2aabb.html" class="tsd-signature-type" data-tsd-kind="Class">b2AABB</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3538</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Query the world for all fixtures that potentially overlap the provided AABB.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <span class="tsd-signature-symbol">(</span>fixutre<span class="tsd-signature-symbol">: </span><a href="dynamics.b2fixture.html" class="tsd-signature-type" data-tsd-kind="Class">b2Fixture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A user implemented callback class. It should match signature function Callback(fixture:b2Fixture):Boolean.  Return true to continue to the next fixture.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>fixutre<span class="tsd-signature-symbol">: </span><a href="dynamics.b2fixture.html" class="tsd-signature-type" data-tsd-kind="Class">b2Fixture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>fixutre: <a href="dynamics.b2fixture.html" class="tsd-signature-type" data-tsd-kind="Class">b2Fixture</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>aabb: <a href="collision.b2aabb.html" class="tsd-signature-type" data-tsd-kind="Class">b2AABB</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The query bounding box.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="querypoint" class="tsd-anchor"></a>
+					<h3>Query<wbr>Point</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Query<wbr>Point<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>fixture<span class="tsd-signature-symbol">: </span><a href="dynamics.b2fixture.html" class="tsd-signature-type" data-tsd-kind="Class">b2Fixture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span>, p<span class="tsd-signature-symbol">: </span><a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3546</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Query the world for all fixtures that contain a point.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>note</dt>
+									<dd><p>This provides a feature specific to this port.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <span class="tsd-signature-symbol">(</span>fixture<span class="tsd-signature-symbol">: </span><a href="dynamics.b2fixture.html" class="tsd-signature-type" data-tsd-kind="Class">b2Fixture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A user implemented callback class.  It should match signature function Callback(fixture:b2Fixture):Boolean.  Return true to continue to the next fixture.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>fixture<span class="tsd-signature-symbol">: </span><a href="dynamics.b2fixture.html" class="tsd-signature-type" data-tsd-kind="Class">b2Fixture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>fixture: <a href="dynamics.b2fixture.html" class="tsd-signature-type" data-tsd-kind="Class">b2Fixture</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>p: <a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The query point.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="queryshape" class="tsd-anchor"></a>
+					<h3>Query<wbr>Shape</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Query<wbr>Shape<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>fixture<span class="tsd-signature-symbol">: </span><a href="dynamics.b2fixture.html" class="tsd-signature-type" data-tsd-kind="Class">b2Fixture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span>, shape<span class="tsd-signature-symbol">: </span><a href="collision.shapes.b2shape.html" class="tsd-signature-type" data-tsd-kind="Class">b2Shape</a>, transform<span class="tsd-signature-symbol">?: </span><a href="common.math.b2transform.html" class="tsd-signature-type" data-tsd-kind="Class">b2Transform</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3555</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Query the world for all fixtures that precisely overlap the provided transformed shape.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>note</dt>
+									<dd><p>This provides a feature specific to this port.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <span class="tsd-signature-symbol">(</span>fixture<span class="tsd-signature-symbol">: </span><a href="dynamics.b2fixture.html" class="tsd-signature-type" data-tsd-kind="Class">b2Fixture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A user implemented callback class.  It should match signature function Callback(fixture:b2Fixture):Boolean.  Return true to continue to the next fixture.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>fixture<span class="tsd-signature-symbol">: </span><a href="dynamics.b2fixture.html" class="tsd-signature-type" data-tsd-kind="Class">b2Fixture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>fixture: <a href="dynamics.b2fixture.html" class="tsd-signature-type" data-tsd-kind="Class">b2Fixture</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>shape: <a href="collision.shapes.b2shape.html" class="tsd-signature-type" data-tsd-kind="Class">b2Shape</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The query shape.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> transform: <a href="common.math.b2transform.html" class="tsd-signature-type" data-tsd-kind="Class">b2Transform</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Optional transform, default = null.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="raycast" class="tsd-anchor"></a>
+					<h3>Ray<wbr>Cast</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Ray<wbr>Cast<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>fixture<span class="tsd-signature-symbol">: </span><a href="dynamics.b2fixture.html" class="tsd-signature-type" data-tsd-kind="Class">b2Fixture</a>, point<span class="tsd-signature-symbol">: </span><a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a>, normal<span class="tsd-signature-symbol">: </span><a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a>, fraction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span>, point1<span class="tsd-signature-symbol">: </span><a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a>, point2<span class="tsd-signature-symbol">: </span><a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3570</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Ray-cast the world for all fixtures in the path of the ray. Your callback Controls whether you get the closest point, any point, or n-points The ray-cast ignores shapes that contain the starting point.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <span class="tsd-signature-symbol">(</span>fixture<span class="tsd-signature-symbol">: </span><a href="dynamics.b2fixture.html" class="tsd-signature-type" data-tsd-kind="Class">b2Fixture</a>, point<span class="tsd-signature-symbol">: </span><a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a>, normal<span class="tsd-signature-symbol">: </span><a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a>, fraction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A callback function which must be of signature:
+											function Callback(
+											fixture:b2Fixture,    // The fixture hit by the ray
+											point:b2Vec2,        // The point of initial intersection
+											normal:b2Vec2,        // The normal vector at the point of intersection
+											fraction:Number        // The fractional length along the ray of the intersection
+											):Number
+										Callback should return the new length of the ray as a fraction of the original length. By returning 0, you immediately terminate. By returning 1, you continue wiht the original ray. By returning the current fraction, you proceed to find the closest point.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>fixture<span class="tsd-signature-symbol">: </span><a href="dynamics.b2fixture.html" class="tsd-signature-type" data-tsd-kind="Class">b2Fixture</a>, point<span class="tsd-signature-symbol">: </span><a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a>, normal<span class="tsd-signature-symbol">: </span><a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a>, fraction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>fixture: <a href="dynamics.b2fixture.html" class="tsd-signature-type" data-tsd-kind="Class">b2Fixture</a></h5>
+														</li>
+														<li>
+															<h5>point: <a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a></h5>
+														</li>
+														<li>
+															<h5>normal: <a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a></h5>
+														</li>
+														<li>
+															<h5>fraction: <span class="tsd-signature-type">number</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>point1: <a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The ray starting point.</p>
+									</div>
+								</li>
+								<li>
+									<h5>point2: <a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The ray ending point.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="raycastall" class="tsd-anchor"></a>
+					<h3>Ray<wbr>Cast<wbr>All</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Ray<wbr>Cast<wbr>All<span class="tsd-signature-symbol">(</span>point1<span class="tsd-signature-symbol">: </span><a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a>, point2<span class="tsd-signature-symbol">: </span><a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="dynamics.b2fixture.html" class="tsd-signature-type" data-tsd-kind="Class">b2Fixture</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3578</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Ray-cast the world for all fixture in the path of the ray.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>point1: <a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The ray starting point.</p>
+									</div>
+								</li>
+								<li>
+									<h5>point2: <a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The ray ending point.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="dynamics.b2fixture.html" class="tsd-signature-type" data-tsd-kind="Class">b2Fixture</a><span class="tsd-signature-symbol">[]</span></h4>
+							<p>Array of all the fixtures intersected by the ray.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="raycastone" class="tsd-anchor"></a>
+					<h3>Ray<wbr>Cast<wbr>One</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Ray<wbr>Cast<wbr>One<span class="tsd-signature-symbol">(</span>point1<span class="tsd-signature-symbol">: </span><a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a>, point2<span class="tsd-signature-symbol">: </span><a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="dynamics.b2fixture.html" class="tsd-signature-type" data-tsd-kind="Class">b2Fixture</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3586</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Ray-cast the world for the first fixture in the path of the ray.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>point1: <a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The ray starting point.</p>
+									</div>
+								</li>
+								<li>
+									<h5>point2: <a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The ray ending point.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="dynamics.b2fixture.html" class="tsd-signature-type" data-tsd-kind="Class">b2Fixture</a></h4>
+							<p>First fixture intersected by the ray.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="removecontroller" class="tsd-anchor"></a>
+					<h3>Remove<wbr>Controller</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Remove<wbr>Controller<span class="tsd-signature-symbol">(</span>c<span class="tsd-signature-symbol">: </span><a href="dynamics.controllers.b2controller.html" class="tsd-signature-type" data-tsd-kind="Class">b2Controller</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3592</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes the controller from the world.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>c: <a href="dynamics.controllers.b2controller.html" class="tsd-signature-type" data-tsd-kind="Class">b2Controller</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Controller to remove.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="setbroadphase" class="tsd-anchor"></a>
+					<h3>Set<wbr>Broad<wbr>Phase</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Set<wbr>Broad<wbr>Phase<span class="tsd-signature-symbol">(</span>broadPhase<span class="tsd-signature-symbol">: </span><a href="../interfaces/collision.ibroadphase.html" class="tsd-signature-type" data-tsd-kind="Interface">IBroadPhase</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3599</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Use the given object as a broadphase. The old broadphase will not be cleanly emptied.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>warning</dt>
+									<dd><p>This function is locked during callbacks.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>broadPhase: <a href="../interfaces/collision.ibroadphase.html" class="tsd-signature-type" data-tsd-kind="Interface">IBroadPhase</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="setcontactfilter" class="tsd-anchor"></a>
+					<h3>Set<wbr>Contact<wbr>Filter</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Set<wbr>Contact<wbr>Filter<span class="tsd-signature-symbol">(</span>filter<span class="tsd-signature-symbol">: </span><a href="dynamics.b2contactfilter.html" class="tsd-signature-type" data-tsd-kind="Class">b2ContactFilter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3605</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Register a contact filter to provide specific control over collision. Otherwise the default filter is used (b2_defaultFilter).</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>filter: <a href="dynamics.b2contactfilter.html" class="tsd-signature-type" data-tsd-kind="Class">b2ContactFilter</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Contact filter&#39;er.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="setcontactlistener" class="tsd-anchor"></a>
+					<h3>Set<wbr>Contact<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Set<wbr>Contact<wbr>Listener<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="dynamics.b2contactlistener.html" class="tsd-signature-type" data-tsd-kind="Class">b2ContactListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3611</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Register a contact event listener.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>listener: <a href="dynamics.b2contactlistener.html" class="tsd-signature-type" data-tsd-kind="Class">b2ContactListener</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Contact event listener.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="setcontinuousphysics" class="tsd-anchor"></a>
+					<h3>Set<wbr>Continuous<wbr>Physics</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Set<wbr>Continuous<wbr>Physics<span class="tsd-signature-symbol">(</span>flag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3617</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Enable/disable continuous physics. For testing.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>flag: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>True for continuous physics, otherwise false.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="setdebugdraw" class="tsd-anchor"></a>
+					<h3>Set<wbr>Debug<wbr>Draw</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Set<wbr>Debug<wbr>Draw<span class="tsd-signature-symbol">(</span>debugDraw<span class="tsd-signature-symbol">: </span><a href="dynamics.b2debugdraw.html" class="tsd-signature-type" data-tsd-kind="Class">b2DebugDraw</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3623</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Register a routine for debug drawing. The debug draw functions are called inside the b2World::Step method, so make sure your renderer is ready to consume draw commands when you call Step().</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>debugDraw: <a href="dynamics.b2debugdraw.html" class="tsd-signature-type" data-tsd-kind="Class">b2DebugDraw</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Debug drawing instance.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="setdestructionlistener" class="tsd-anchor"></a>
+					<h3>Set<wbr>Destruction<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Set<wbr>Destruction<wbr>Listener<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="dynamics.b2destructionlistener.html" class="tsd-signature-type" data-tsd-kind="Class">b2DestructionListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3629</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Destruct the world. All physics entities are destroyed and all heap memory is released.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>listener: <a href="dynamics.b2destructionlistener.html" class="tsd-signature-type" data-tsd-kind="Class">b2DestructionListener</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Destruction listener instance.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="setgravity" class="tsd-anchor"></a>
+					<h3>Set<wbr>Gravity</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Set<wbr>Gravity<span class="tsd-signature-symbol">(</span>gravity<span class="tsd-signature-symbol">: </span><a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3635</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Change the global gravity vector.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>gravity: <a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>New global gravity vector.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="setwarmstarting" class="tsd-anchor"></a>
+					<h3>Set<wbr>Warm<wbr>Starting</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Set<wbr>Warm<wbr>Starting<span class="tsd-signature-symbol">(</span>flag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3641</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Enable/disable warm starting. For testing.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>flag: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>True for warm starting, otherwise false.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="step" class="tsd-anchor"></a>
+					<h3>Step</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Step<span class="tsd-signature-symbol">(</span>dt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, velocityIterations<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, positionIterations<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3649</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Take a time step. This performs collision detection, integration, and constraint solution.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dt: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The amout of time to simulate, this should not vary.</p>
+									</div>
+								</li>
+								<li>
+									<h5>velocityIterations: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>For the velocity constraint solver.</p>
+									</div>
+								</li>
+								<li>
+									<h5>positionIterations: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>For the position constraint solver.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="validate" class="tsd-anchor"></a>
+					<h3>Validate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Validate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:3654</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Perform validation of internal data structures.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Externals</span>
+					</li>
+					<li class=" tsd-kind-namespace tsd-is-external">
+						<a href="../modules/collision.html">Collision</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+						<a href="../modules/collision.shapes.html">Collision.<wbr>Shapes</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-is-external">
+						<a href="../modules/common.html">Common</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+						<a href="../modules/common.math.html">Common.<wbr>Math</a>
+					</li>
+					<li class="current tsd-kind-namespace tsd-is-external">
+						<a href="../modules/dynamics.html">Dynamics</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+						<a href="../modules/dynamics.contacts.html">Dynamics.<wbr>Contacts</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+						<a href="../modules/dynamics.controllers.html">Dynamics.<wbr>Controllers</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+						<a href="../modules/dynamics.joints.html">Dynamics.<wbr>Joints</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="dynamics.b2body.html" class="tsd-kind-icon">b2<wbr>Body</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="dynamics.b2bodydef.html" class="tsd-kind-icon">b2<wbr>Body<wbr>Def</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="dynamics.b2contactfilter.html" class="tsd-kind-icon">b2<wbr>Contact<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="dynamics.b2contactimpulse.html" class="tsd-kind-icon">b2<wbr>Contact<wbr>Impulse</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="dynamics.b2contactlistener.html" class="tsd-kind-icon">b2<wbr>Contact<wbr>Listener</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="dynamics.b2debugdraw.html" class="tsd-kind-icon">b2<wbr>Debug<wbr>Draw</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="dynamics.b2destructionlistener.html" class="tsd-kind-icon">b2<wbr>Destruction<wbr>Listener</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="dynamics.b2filterdata.html" class="tsd-kind-icon">b2<wbr>Filter<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="dynamics.b2fixture.html" class="tsd-kind-icon">b2<wbr>Fixture</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="dynamics.b2fixturedef.html" class="tsd-kind-icon">b2<wbr>Fixture<wbr>Def</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="dynamics.b2world.html" class="tsd-kind-icon">b2<wbr>World</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="dynamics.b2world.html#e_locked" class="tsd-kind-icon">e_<wbr>locked</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="dynamics.b2world.html#e_newfixture" class="tsd-kind-icon">e_<wbr>new<wbr>Fixture</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#addcontroller" class="tsd-kind-icon">Add<wbr>Controller</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#clearforces" class="tsd-kind-icon">Clear<wbr>Forces</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#createbody" class="tsd-kind-icon">Create<wbr>Body</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#createcontroller" class="tsd-kind-icon">Create<wbr>Controller</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#createjoint" class="tsd-kind-icon">Create<wbr>Joint</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#destroybody" class="tsd-kind-icon">Destroy<wbr>Body</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#destroycontroller" class="tsd-kind-icon">Destroy<wbr>Controller</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#destroyjoint" class="tsd-kind-icon">Destroy<wbr>Joint</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#drawdebugdata" class="tsd-kind-icon">Draw<wbr>Debug<wbr>Data</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#getbodycount" class="tsd-kind-icon">Get<wbr>Body<wbr>Count</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#getbodylist" class="tsd-kind-icon">Get<wbr>Body<wbr>List</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#getcontactcount" class="tsd-kind-icon">Get<wbr>Contact<wbr>Count</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#getcontactlist" class="tsd-kind-icon">Get<wbr>Contact<wbr>List</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#getgravity" class="tsd-kind-icon">Get<wbr>Gravity</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#getgroundbody" class="tsd-kind-icon">Get<wbr>Ground<wbr>Body</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#getjointcount" class="tsd-kind-icon">Get<wbr>Joint<wbr>Count</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#getjointlist" class="tsd-kind-icon">Get<wbr>Joint<wbr>List</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#getproxycount" class="tsd-kind-icon">Get<wbr>Proxy<wbr>Count</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#islocked" class="tsd-kind-icon">Is<wbr>Locked</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#queryaabb" class="tsd-kind-icon">QueryAABB</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#querypoint" class="tsd-kind-icon">Query<wbr>Point</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#queryshape" class="tsd-kind-icon">Query<wbr>Shape</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#raycast" class="tsd-kind-icon">Ray<wbr>Cast</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#raycastall" class="tsd-kind-icon">Ray<wbr>Cast<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#raycastone" class="tsd-kind-icon">Ray<wbr>Cast<wbr>One</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#removecontroller" class="tsd-kind-icon">Remove<wbr>Controller</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#setbroadphase" class="tsd-kind-icon">Set<wbr>Broad<wbr>Phase</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#setcontactfilter" class="tsd-kind-icon">Set<wbr>Contact<wbr>Filter</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#setcontactlistener" class="tsd-kind-icon">Set<wbr>Contact<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#setcontinuousphysics" class="tsd-kind-icon">Set<wbr>Continuous<wbr>Physics</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#setdebugdraw" class="tsd-kind-icon">Set<wbr>Debug<wbr>Draw</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#setdestructionlistener" class="tsd-kind-icon">Set<wbr>Destruction<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#setgravity" class="tsd-kind-icon">Set<wbr>Gravity</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#setwarmstarting" class="tsd-kind-icon">Set<wbr>Warm<wbr>Starting</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#step" class="tsd-kind-icon">Step</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="dynamics.b2world.html#validate" class="tsd-kind-icon">Validate</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

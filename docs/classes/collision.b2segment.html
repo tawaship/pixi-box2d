@@ -1,0 +1,473 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>b2Segment | @tawaship/pixi-box2d-test - v1.0.0</title>
+	<meta name="description" content="Documentation for @tawaship/pixi-box2d-test - v1.0.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@tawaship/pixi-box2d-test - v1.0.0</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">@tawaship/pixi-box2d-test - v1.0.0</a>
+				</li>
+				<li>
+					<a href="../modules/collision.html">Collision</a>
+				</li>
+				<li>
+					<a href="collision.b2segment.html">b2Segment</a>
+				</li>
+			</ul>
+			<h1>Class b2Segment</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A line in space between two given vertices.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">b2Segment</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-external"><a href="collision.b2segment.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="collision.b2segment.html#p1" class="tsd-kind-icon">p1</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="collision.b2segment.html#p2" class="tsd-kind-icon">p2</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="collision.b2segment.html#extend" class="tsd-kind-icon">Extend</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="collision.b2segment.html#extendbackward" class="tsd-kind-icon">Extend<wbr>Backward</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="collision.b2segment.html#extendforward" class="tsd-kind-icon">Extend<wbr>Forward</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="collision.b2segment.html#testsegment" class="tsd-kind-icon">Test<wbr>Segment</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">new b2<wbr>Segment<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="collision.b2segment.html" class="tsd-signature-type" data-tsd-kind="Class">b2Segment</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="collision.b2segment.html" class="tsd-signature-type" data-tsd-kind="Class">b2Segment</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="p1" class="tsd-anchor"></a>
+					<h3>p1</h3>
+					<div class="tsd-signature tsd-kind-icon">p1<span class="tsd-signature-symbol">:</span> <a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:1626</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The starting point.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="p2" class="tsd-anchor"></a>
+					<h3>p2</h3>
+					<div class="tsd-signature tsd-kind-icon">p2<span class="tsd-signature-symbol">:</span> <a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:1631</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The ending point.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="extend" class="tsd-anchor"></a>
+					<h3>Extend</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Extend<span class="tsd-signature-symbol">(</span>aabb<span class="tsd-signature-symbol">: </span><a href="collision.b2aabb.html" class="tsd-signature-type" data-tsd-kind="Class">b2AABB</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:1637</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Extends or clips the segment so that it&#39;s ends lie on the boundary of the AABB.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>aabb: <a href="collision.b2aabb.html" class="tsd-signature-type" data-tsd-kind="Class">b2AABB</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>AABB to extend/clip the segement.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="extendbackward" class="tsd-anchor"></a>
+					<h3>Extend<wbr>Backward</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Extend<wbr>Backward<span class="tsd-signature-symbol">(</span>aabb<span class="tsd-signature-symbol">: </span><a href="collision.b2aabb.html" class="tsd-signature-type" data-tsd-kind="Class">b2AABB</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:1643</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>See Extend, this works on the ending point.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>aabb: <a href="collision.b2aabb.html" class="tsd-signature-type" data-tsd-kind="Class">b2AABB</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>AABB to extend/clip the ending point.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="extendforward" class="tsd-anchor"></a>
+					<h3>Extend<wbr>Forward</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Extend<wbr>Forward<span class="tsd-signature-symbol">(</span>aabb<span class="tsd-signature-symbol">: </span><a href="collision.b2aabb.html" class="tsd-signature-type" data-tsd-kind="Class">b2AABB</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:1649</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>See Extend, this works on the starting point.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>aabb: <a href="collision.b2aabb.html" class="tsd-signature-type" data-tsd-kind="Class">b2AABB</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>AABB to extend/clip the starting point.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="testsegment" class="tsd-anchor"></a>
+					<h3>Test<wbr>Segment</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">Test<wbr>Segment<span class="tsd-signature-symbol">(</span>lambda<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, normal<span class="tsd-signature-symbol">: </span><a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a>, segment<span class="tsd-signature-symbol">: </span><a href="collision.b2segment.html" class="tsd-signature-type" data-tsd-kind="Class">b2Segment</a>, maxLambda<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@tawaship/box2dweb-module/types/box2dweb.d.ts:1658</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Ray cast against this segment with another segment.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>lambda: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>returns the hit fraction. You can use this to compute the contact point * p = (1 - lambda) * segment.p1 + lambda * segment.p2 * @normal Normal at the contact point.  If there is no intersection, the normal is not set.</p>
+									</div>
+								</li>
+								<li>
+									<h5>normal: <a href="common.math.b2vec2.html" class="tsd-signature-type" data-tsd-kind="Class">b2Vec2</a></h5>
+								</li>
+								<li>
+									<h5>segment: <a href="collision.b2segment.html" class="tsd-signature-type" data-tsd-kind="Class">b2Segment</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Defines the begining and end point of the ray cast.</p>
+									</div>
+								</li>
+								<li>
+									<h5>maxLambda: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>a number typically in the range [0,1].</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>True if there is an intersection, otherwise false.</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Externals</span>
+					</li>
+					<li class="current tsd-kind-namespace tsd-is-external">
+						<a href="../modules/collision.html">Collision</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+						<a href="../modules/collision.shapes.html">Collision.<wbr>Shapes</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-is-external">
+						<a href="../modules/common.html">Common</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+						<a href="../modules/common.math.html">Common.<wbr>Math</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-is-external">
+						<a href="../modules/dynamics.html">Dynamics</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+						<a href="../modules/dynamics.contacts.html">Dynamics.<wbr>Contacts</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+						<a href="../modules/dynamics.controllers.html">Dynamics.<wbr>Controllers</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+						<a href="../modules/dynamics.joints.html">Dynamics.<wbr>Joints</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="collision.features.html" class="tsd-kind-icon">Features</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="collision.b2aabb.html" class="tsd-kind-icon">b2AABB</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="collision.b2contactid.html" class="tsd-kind-icon">b2<wbr>ContactID</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="collision.b2contactpoint.html" class="tsd-kind-icon">b2<wbr>Contact<wbr>Point</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="collision.b2distanceinput.html" class="tsd-kind-icon">b2<wbr>Distance<wbr>Input</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="collision.b2distanceoutput.html" class="tsd-kind-icon">b2<wbr>Distance<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="collision.b2distanceproxy.html" class="tsd-kind-icon">b2<wbr>Distance<wbr>Proxy</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="collision.b2dynamictree.html" class="tsd-kind-icon">b2<wbr>Dynamic<wbr>Tree</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="collision.b2dynamictreebroadphase.html" class="tsd-kind-icon">b2<wbr>Dynamic<wbr>Tree<wbr>Broad<wbr>Phase</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="collision.b2dynamictreenode.html" class="tsd-kind-icon">b2<wbr>Dynamic<wbr>Tree<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="collision.b2manifold.html" class="tsd-kind-icon">b2<wbr>Manifold</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="collision.b2manifoldpoint.html" class="tsd-kind-icon">b2<wbr>Manifold<wbr>Point</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="collision.b2obb.html" class="tsd-kind-icon">b2OBB</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="collision.b2raycastinput.html" class="tsd-kind-icon">b2<wbr>Ray<wbr>Cast<wbr>Input</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="collision.b2raycastoutput.html" class="tsd-kind-icon">b2<wbr>Ray<wbr>Cast<wbr>Output</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="collision.b2segment.html" class="tsd-kind-icon">b2<wbr>Segment</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+								<a href="collision.b2segment.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="collision.b2segment.html#p1" class="tsd-kind-icon">p1</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="collision.b2segment.html#p2" class="tsd-kind-icon">p2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="collision.b2segment.html#extend" class="tsd-kind-icon">Extend</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="collision.b2segment.html#extendbackward" class="tsd-kind-icon">Extend<wbr>Backward</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="collision.b2segment.html#extendforward" class="tsd-kind-icon">Extend<wbr>Forward</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="collision.b2segment.html#testsegment" class="tsd-kind-icon">Test<wbr>Segment</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="collision.b2simplexcache.html" class="tsd-kind-icon">b2<wbr>Simplex<wbr>Cache</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="collision.b2toiinput.html" class="tsd-kind-icon">b2TOIInput</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="collision.b2worldmanifold.html" class="tsd-kind-icon">b2<wbr>World<wbr>Manifold</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-is-external">
+						<a href="../interfaces/collision.ibroadphase.html" class="tsd-kind-icon">IBroad<wbr>Phase</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
