@@ -1,5 +1,5 @@
 /*!
- * pixi-box2d - v1.0.0
+ * pixi-box2d - v1.0.1
  * 
  * @require pixi.js v^5.3.3
  * @require Box2d.js
@@ -67,8 +67,7 @@ this.PIXI = this.PIXI || {}, function(exports, pixi_js, box2dwebModule) {
             if (!ctx) {
                 return canvas;
             }
-            pixiCanvas.parentNode && pixiCanvas.parentNode.appendChild(canvas), canvas.width = pixiCanvas.width, 
-            canvas.height = pixiCanvas.height, canvas.style.width = pixiCanvas.style.width, 
+            canvas.width = pixiCanvas.width, canvas.height = pixiCanvas.height, canvas.style.width = pixiCanvas.style.width, 
             canvas.style.height = pixiCanvas.style.height, canvas.style.top = pixiCanvas.style.top || "0", 
             canvas.style.left = pixiCanvas.style.left || "0", canvas.style.position = "absolute", 
             canvas.style.pointerEvents = "none", canvas.style.zIndex = "100";

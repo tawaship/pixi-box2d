@@ -29,7 +29,7 @@
 						listenEndContact: true,
 						ticker: app.ticker
 					}));
-					world.addDebugDraw(app.view);
+					displayDebugDraw(world);
 					
 					const a = world.addBox2d(PIXI.box2d.Circle.from(new PIXI.Graphics().beginFill(0xFF0000).drawCircle(100, 0, 20), {
 						density: 0.1,
@@ -79,10 +79,12 @@
 				}
 			}
 			
-			document.body.appendChild(app.view);
+			function displayDebugDraw(world) {
+				document.body.appendChild(world.addDebugDraw(app.view));
+			}
 			
 			app.stage.addChild(new Root());
-			
+			document.body.appendChild(app.view);
 			app.start();
 		</script>
 	</div>

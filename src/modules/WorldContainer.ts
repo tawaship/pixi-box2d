@@ -133,10 +133,6 @@ export class WorldContainer extends Container {
 			return canvas;
 		}
 		
-		if (pixiCanvas.parentNode) {
-			pixiCanvas.parentNode.appendChild(canvas);
-		}
-		
 		canvas.width = pixiCanvas.width;
 		canvas.height = pixiCanvas.height;
 		canvas.style.width = pixiCanvas.style.width;

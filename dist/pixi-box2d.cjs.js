@@ -1,5 +1,5 @@
 /*!
- * pixi-box2d - v1.0.0
+ * pixi-box2d - v1.0.1
  * 
  * @require pixi.js v^5.3.3
  * @require Box2d.js
@@ -153,9 +153,6 @@ class WorldContainer extends pixi_js.Container {
         const ctx = canvas.getContext('2d');
         if (!ctx) {
             return canvas;
-        }
-        if (pixiCanvas.parentNode) {
-            pixiCanvas.parentNode.appendChild(canvas);
         }
         canvas.width = pixiCanvas.width;
         canvas.height = pixiCanvas.height;
