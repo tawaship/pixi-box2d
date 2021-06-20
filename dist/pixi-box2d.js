@@ -1,5 +1,5 @@
 /*!
- * pixi-box2d - v1.0.1
+ * pixi-box2d - v1.0.2
  * 
  * @require pixi.js v^5.3.3
  * @require Box2d.js
@@ -38,7 +38,12 @@ this.PIXI = this.PIXI || {}, function(exports, pixi_js, box2dwebModule) {
                 enabled: !0,
                 speed: 1,
                 targets: {},
-                deletes: {}
+                deletes: {},
+                displayOffsetX: options.displayOffsetX || 0,
+                displayOffsetY: options.displayOffsetY || 0,
+                displayAngle: options.displayAngle || 0,
+                perspectiveRatio: options.perspectiveRatio || 1e3,
+                isDisplayNegative: options.isDisplayNegative || !1
             }, this.on("added", (function() {
                 options.ticker.add(this$1._handleTick, this$1);
             })), this.on("removed", (function() {
@@ -59,6 +64,15 @@ this.PIXI = this.PIXI || {}, function(exports, pixi_js, box2dwebModule) {
                 configurable: !0
             },
             world: {
+                configurable: !0
+            },
+            displayOffsetX: {
+                configurable: !0
+            },
+            displayOffsetY: {
+                configurable: !0
+            },
+            displayAngle: {
                 configurable: !0
             }
         };
@@ -84,13 +98,35 @@ this.PIXI = this.PIXI || {}, function(exports, pixi_js, box2dwebModule) {
                     var b2d = this._box2dData.deletes[i];
                     delete targets[i], b2d.body && (world.DestroyBody(b2d.body), b2d.body = null);
                 }
-                for (var i$1 in this._box2dData.deletes = [], targets) {
-                    var b2d$1 = targets[i$1];
-                    if (b2d$1.body) {
-                        var position = b2d$1.body.GetPosition();
-                        b2d$1.x = 30 * position.x, b2d$1.y = 30 * position.y, b2d$1.rotation = b2d$1.body.GetAngle();
+                this._box2dData.deletes = [], this.reflect();
+            }
+        }, WorldContainer.prototype.reflect = function() {
+            var ref, targets = this._box2dData.targets, displayOffsetX = this._box2dData.displayOffsetX, displayOffsetY = this._box2dData.displayOffsetY, displayAngle = this._box2dData.displayAngle;
+            if (0 === displayAngle) {
+                for (var i in targets) {
+                    var b2d = targets[i];
+                    if (b2d.body) {
+                        var position = b2d.body.GetPosition();
+                        b2d.y = 30 * position.y - displayOffsetY, b2d.x = 30 * position.x - displayOffsetX, 
+                        b2d.rotation = b2d.body.GetAngle();
                     }
                 }
+            } else {
+                var isDisplayNegative = this._box2dData.isDisplayNegative, ratio = this._box2dData.perspectiveRatio * displayAngle;
+                for (var i$1 in targets) {
+                    var b2d$1 = targets[i$1];
+                    if (b2d$1.body) {
+                        var position$1 = b2d$1.body.GetPosition();
+                        b2d$1.y = 30 * position$1.y - displayOffsetY;
+                        var s = 1 + b2d$1.y * displayAngle;
+                        !isDisplayNegative && s < 0 ? b2d$1.renderable = !1 : (b2d$1.visible = !0, b2d$1.scale.set(s), 
+                        b2d$1.x = (30 * position$1.x - displayOffsetX) * s, b2d$1.y *= s / ratio, b2d$1.rotation = b2d$1.body.GetAngle());
+                    }
+                }
+                var n = this.removeChildren().sort((function(a, b) {
+                    return a.y === b.y ? Math.abs(a.x) - Math.abs(b.x) : a.y - b.y;
+                }));
+                (ref = this).addChild.apply(ref, n);
             }
         }, prototypeAccessors.speed.get = function() {
             return this._box2dData.speed;
@@ -114,6 +150,18 @@ this.PIXI = this.PIXI || {}, function(exports, pixi_js, box2dwebModule) {
             delete this._box2dData.deletes[b2d.box2dID], b2d;
         }, WorldContainer.prototype.removeBox2d = function(b2d) {
             return this.removeChild(b2d), this._box2dData.deletes[b2d.box2dID] = b2d, b2d;
+        }, prototypeAccessors.displayOffsetX.get = function() {
+            return this._box2dData.displayOffsetX;
+        }, prototypeAccessors.displayOffsetX.set = function(displayOffsetX) {
+            this._box2dData.displayOffsetX = displayOffsetX;
+        }, prototypeAccessors.displayOffsetY.get = function() {
+            return this._box2dData.displayOffsetY;
+        }, prototypeAccessors.displayOffsetY.set = function(displayOffsetY) {
+            this._box2dData.displayOffsetY = displayOffsetY;
+        }, prototypeAccessors.displayAngle.get = function() {
+            return this._box2dData.displayAngle;
+        }, prototypeAccessors.displayAngle.set = function(displayAngle) {
+            this._box2dData.displayAngle = displayAngle;
         }, Object.defineProperties(WorldContainer.prototype, prototypeAccessors), WorldContainer;
     }(pixi_js.Container);
     function createBodyDef(isDynamic) {

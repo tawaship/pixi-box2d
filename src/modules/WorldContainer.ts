@@ -10,6 +10,11 @@ export interface IWorldContainerData {
 	speed: number;
 	targets: { [id: number]: Box2dObject };
 	deletes: { [id: number]: Box2dObject };
+	displayOffsetX: number;
+	displayOffsetY: number;
+	displayAngle: number;
+	perspectiveRatio: number;
+	isDisplayNegative: boolean;
 }
 
 export interface IWorldContainerOption {
@@ -21,6 +26,11 @@ export interface IWorldContainerOption {
 	listenEndContact?: boolean;
 	listenPreSolve?: boolean;
 	listenPostSolve?: boolean;
+	displayOffsetX?: number;
+	displayOffsetY?: number;
+	displayAngle?: number;
+	perspectiveRatio?: number;
+	isDisplayNegative?: boolean;
 }
 
 /**
@@ -88,7 +98,12 @@ export class WorldContainer extends Container {
 			enabled: true,
 			speed: 1,
 			targets: {},
-			deletes: {}
+			deletes: {},
+			displayOffsetX: options.displayOffsetX || 0,
+			displayOffsetY: options.displayOffsetY || 0,
+			displayAngle: options.displayAngle || 0,
+			perspectiveRatio: options.perspectiveRatio || 1000,
+			isDisplayNegative: options.isDisplayNegative || false
 		};
 		
 		this.on('added', () => {
@@ -177,19 +192,69 @@ export class WorldContainer extends Container {
 			}
 		}
 		this._box2dData.deletes = [];
+		this.reflect();
+	}
+	
+	reflect(): void {
+		const targets = this._box2dData.targets;
 		
-		for (const i in targets) {
-			const b2d = targets[i];
+		const displayOffsetX = this._box2dData.displayOffsetX;
+		const displayOffsetY = this._box2dData.displayOffsetY;
+		const displayAngle = this._box2dData.displayAngle;
+		
+		if (displayAngle === 0) {
+			for (const i in targets) {
+				const b2d = targets[i];
+				
+				if (!b2d.body) {
+					continue;
+				}
+				
+				const position = b2d.body.GetPosition();
+				
+				b2d.y = position.y * Box2dToPixi - displayOffsetY;
+				b2d.x = (position.x * Box2dToPixi - displayOffsetX);
+				b2d.rotation = b2d.body.GetAngle();
+			}
+		} else {
+			const isDisplayNegative = this._box2dData.isDisplayNegative;
+			const ratio = this._box2dData.perspectiveRatio * displayAngle;
 			
-			if (!b2d.body) {
-				continue;
+			for (const i in targets) {
+				const b2d = targets[i];
+				
+				if (!b2d.body) {
+					continue;
+				}
+				
+				const position = b2d.body.GetPosition();
+				
+				b2d.y = position.y * Box2dToPixi - displayOffsetY;
+				const s = 1 + b2d.y * displayAngle;
+				
+				if (!isDisplayNegative && s < 0) {
+					b2d.renderable = false;
+					continue;
+				} else {
+					b2d.visible = true;
+				}
+				
+				b2d.scale.set(s);
+				b2d.x = (position.x * Box2dToPixi - displayOffsetX) * s;
+				b2d.y *= s / ratio;
+				b2d.rotation = b2d.body.GetAngle();
 			}
 			
-			const position = b2d.body.GetPosition();
+			const children = this.removeChildren();
+			const n = children.sort((a, b) => {
+				if (a.y === b.y) {
+					return Math.abs(a.x) - Math.abs(b.x);
+				}
+				
+				return a.y - b.y;
+			});
 			
-			b2d.x = position.x * Box2dToPixi;
-			b2d.y = position.y * Box2dToPixi;
-			b2d.rotation = b2d.body.GetAngle();
+			this.addChild(...n);
 		}
 	}
 	
@@ -241,5 +306,29 @@ export class WorldContainer extends Container {
 		this._box2dData.deletes[b2d.box2dID] = b2d;
 		
 		return b2d;
+	}
+	
+	get displayOffsetX(): number {
+		return this._box2dData.displayOffsetX;
+	}
+	
+	set displayOffsetX(displayOffsetX: number) {
+		this._box2dData.displayOffsetX = displayOffsetX;
+	}
+	
+	get displayOffsetY(): number {
+		return this._box2dData.displayOffsetY;
+	}
+	
+	set displayOffsetY(displayOffsetY: number) {
+		this._box2dData.displayOffsetY = displayOffsetY;
+	}
+	
+	get displayAngle(): number {
+		return this._box2dData.displayAngle;
+	}
+	
+	set displayAngle(displayAngle: number) {
+		this._box2dData.displayAngle = displayAngle;
 	}
 }

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no, minimal-ui">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.3.3/pixi.js"></script>
+		<script src="../lib/Box2d.min.js"></script>
+		<script src="../dist/pixi-box2d.js"></script>
+	</head>
+	<body style="width: 100%; margin: 0;">
+		<script>
+			const app = new PIXI.Application({
+				width: 450,
+				height: 800
+			});
+			
+			class Root extends PIXI.Container {
+				constructor() {
+					super();
+					
+					this.addChild(new PIXI.Graphics()).beginFill(0).drawRect(0, 0, 450, 800)
+					this.interactive = true;
+					this.cursor = 'pointer'
+					
+					const displayOffsetX = 225;
+					const displayOffsetY = 100;
+					const displayAngle = 0.0025;
+					
+					const world = (new PIXI.box2d.WorldContainer({
+						ticker: app.ticker,
+						gravityX: 0,
+						gravityY: 0,
+						listenPreSolve: false,
+						listenPostSolve: false,
+						listenBeginContact: false,
+						listenEndContact: true,
+						displayOffsetX,
+						displayOffsetY,
+						displayAngle
+					}));
+					
+					const canvas = displayDebugDraw(world);
+					canvas.style.left = "450px"
+					
+					const baseHeight = 10;
+					
+					const col = 5;
+					const row = 5;
+					const val = 200;
+					const size = 10;
+					
+					world.x = displayOffsetX;
+					world.y = displayOffsetY;
+					for (let i = 0; i < val; i++) {
+						const a = world.addBox2d(PIXI.box2d.Circle.from(new PIXI.Graphics().beginFill(Math.random() * 0x00FFFF + 0xFF0000).drawEllipse(0, 0, size, size), {
+							density: 1,
+							restitution: 1,
+							friction:0,
+							categoryBits: 2
+						}));
+						
+						a.setX(Math.random() * size * 20 - size * 10 + displayOffsetX);
+						a.setY(Math.random() * size * 40 + baseHeight + displayOffsetY);
+					}
+					
+					const base = world.addBox2d(PIXI.box2d.Rectangle.from(new PIXI.Graphics().beginFill(0x0000FF).drawRect(0, 0, 450, baseHeight), {
+						density: 1,
+						restitution: 1,
+						isStatic: true
+					}));
+					
+					let baseRad = Math.PI / 180 * -90;
+					app.ticker.add(delta => {
+						base.setY(Math.sin(baseRad += Math.PI / 180 * delta) * size + displayOffsetY);
+					});
+					
+					this.on("pointerdown", (e) => {
+							const a = world.addBox2d(PIXI.box2d.Circle.from(new PIXI.Graphics().beginFill(0xFF0000).drawCircle(0, 0, size), {
+								density: 0.1,
+								restitution: 0.1,
+								categoryBits: 2
+							}));
+							const p = e.data.global;
+							
+							a.setX(p.x);
+							a.setY(p.y);
+					});
+					
+					this.addChild(world)
+				}
+			}
+			
+			function displayDebugDraw(world) {
+				return document.body.appendChild(world.addDebugDraw(app.view));
+			}
+			
+			app.stage.addChild(new Root());
+			document.body.appendChild(app.view);
+			app.start();
+		</script>
+	</div>
+	</body>
+</html>

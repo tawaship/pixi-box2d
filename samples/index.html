@@ -3,90 +3,17 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no, minimal-ui">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.3.3/pixi.js"></script>
-		<script src="../lib/Box2d.min.js"></script>
-		<script src="../dist/pixi-box2d.js"></script>
+		<title>
+			index
+		</title>
+		
+		<link rel="stylesheet" href="../style.css" />
 	</head>
-	<body style="width: 100%; margin: 0;">
-		<script>
-			const app = new PIXI.Application({
-				width: 450,
-				height: 800
-			});
-			
-			class Root extends PIXI.Container {
-				constructor() {
-					super();
-					
-					this.addChild(new PIXI.Graphics()).beginFill(0x00FF00).drawRect(0, 0, 450, 800 / 2)
-					this.interactive = true;
-					this.cursor = 'pointer'
-					
-					const world = this.addChild(new PIXI.box2d.WorldContainer({
-						listenPreSolve: false,
-						listenPostSolve: false,
-						listenBeginContact: false,
-						listenEndContact: true,
-						ticker: app.ticker
-					}));
-					displayDebugDraw(world);
-					
-					const a = world.addBox2d(PIXI.box2d.Circle.from(new PIXI.Graphics().beginFill(0xFF0000).drawCircle(100, 0, 20), {
-						density: 0.1,
-						restitution: 0.1,
-						categoryBits: 2
-					}));
-					a.setX(120);
-					
-					//a.children[0].position.set(0,0)
-					//console.log(Box2D)
-					this.on("pointerdown", (e) => {
-						const r = Math.random() > 0.5;
-						const w = 100
-						const h = 150
-						
-						const a2 = world.addBox2d(new PIXI.box2d.Rectangle(w, h, {
-							density: 0.1,
-							restitution: 0.1,
-							friction: 0.9,
-							categoryBits: 1
-						}));
-						
-						a2.addChild(new PIXI.Graphics().beginFill(0xFF0000).drawRect(0, 0, w, h));
-						if (!r) {
-							a2.setX(e.data.global.x - a2.width / 2);
-							a2.setY(e.data.global.y - a2.height / 2);
-						} else {
-							a2.setRotation(90 * Math.PI / 180);
-							a2.setX(e.data.global.x + a2.height / 2);
-							a2.setY(e.data.global.y - a2.width / 2);
-						}
-					
-					})
-					
-					const baseHeight = 100;
-					const base = world.addBox2d(PIXI.box2d.Rectangle.from(new PIXI.Graphics().beginFill(0x0000FF).drawRect(0, 0, 450 / 2, baseHeight), { isStatic: true }));
-					base.setX(450 / 2 - base.width / 2);
-					base.setY(800 - baseHeight - 100);
-					
-					const dead = world.addBox2d(new PIXI.box2d.Edge(new PIXI.box2d.Common.Math.b2Vec2(450 + 2000, 0), { isStatic: true, isSensor: true, maskBits: 1 }));
-					dead.setX(-1000);
-					dead.setY(800 - 10);
-					dead.on('EndContact', (opponent) => {
-						world.removeBox2d(opponent);
-						console.log("gameover");
-					});
-				}
-			}
-			
-			function displayDebugDraw(world) {
-				document.body.appendChild(world.addDebugDraw(app.view));
-			}
-			
-			app.stage.addChild(new Root());
-			document.body.appendChild(app.view);
-			app.start();
-		</script>
+	<body>
+		<ul>
+			<li><a href="1.html">1</a></li>
+			<li><a href="2.html">2</a></li>
+		</ul>
 	</div>
 	</body>
 </html>

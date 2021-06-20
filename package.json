@@ -1,6 +1,6 @@
 {
   "name": "@tawaship/pixi-box2d",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/pixi-box2d.cjs.js",
   "module": "dist/pixi-box2d.esm.js",
