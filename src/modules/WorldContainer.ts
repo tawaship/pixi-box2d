@@ -82,6 +82,7 @@ function postSolveHandler(contact: Contact) {
  */
 export class WorldContainer extends Container {
 	private _box2dData: IWorldContainerData;
+	declare children: Box2dObject[];
 	
 	constructor(options: IWorldContainerOption) {
 		super();

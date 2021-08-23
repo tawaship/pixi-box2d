@@ -1,5 +1,5 @@
 /*!
- * pixi-box2d - v1.0.2
+ * pixi-box2d - v1.0.3
  * 
  * @require pixi.js v^5.3.3
  * @require Box2d.js
